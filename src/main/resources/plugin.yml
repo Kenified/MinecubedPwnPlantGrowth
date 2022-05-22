@@ -1,0 +1,27 @@
+#name: PwnPlantGrowth
+#version: '${project.version}'
+#main: com.pwn9.PwnPlantGrowth.PwnPlantGrowth
+#api-version: 1.18
+main: com.pwn9.PwnPlantGrowth.PwnPlantGrowth
+name: PwnPlantGrowth
+version: 2.6.1
+depend:
+  - RealisticSeasons
+author: tremor77
+description: Take control over all plant growth
+website: http://pwn9.com
+api-version: 1.13
+commands:
+  ppg:
+    description: Execute a PwnPlantGrowth command
+    usage: /ppg <reload|save>
+    permission: ppg.ppg
+    permission-message: You dont have permission for this command
+permissions:
+  ppg.*:
+    description: gives all permissions of PwnPlantGrowth
+    default: op
+    children:
+      ppg.ppg: true
+      ppg.reload: true
+      ppg.save: true
