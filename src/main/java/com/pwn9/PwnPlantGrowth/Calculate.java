@@ -2,6 +2,7 @@ package com.pwn9.PwnPlantGrowth;
 
 import java.util.List;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 
 public class Calculate {
@@ -25,8 +26,8 @@ public class Calculate {
 		frontLog += "Default Growth: " + curGrowth + ", ";
 		int curDeath = PwnPlantGrowth.instance.getConfig().getInt(thisBlock+".Death");
 		frontLog += "Default Death: " + curDeath + ", ";
-		
-		
+
+//		Bukkit.getServer().getLogger().info(thisBlock);
 		if ((PwnPlantGrowth.instance.getConfig().isSet(thisBlock+".BiomeGroup")) || (PwnPlantGrowth.instance.getConfig().getList(thisBlock+".Biome").isEmpty()) || (PwnPlantGrowth.instance.getConfig().getList(thisBlock+".Biome").contains(curBiome))) 
 		{	
 			// check the area to find if any of the special blocks are found

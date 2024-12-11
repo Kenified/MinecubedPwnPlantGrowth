@@ -188,7 +188,15 @@ public class PlayerListener implements Listener
 						Calculate cal = getCalcs(true, specialBlockList(e), "WHEAT", curBiome, isDark);
 						a += cal.doLog;						
 					}
-					
+					else if (m == Material.TORCHFLOWER_CROP) {
+						Calculate cal = getCalcs(true, specialBlockList(e), "TORCHFLOWER_CROP", curBiome, isDark);
+						a += cal.doLog;
+					}
+					else if (m == Material.PITCHER_CROP) {
+						Calculate cal = getCalcs(true, specialBlockList(e), "PITCHER_CROP", curBiome, isDark);
+						a += cal.doLog;
+					}
+
 					String msg = ChatColor.translateAlternateColorCodes('&', PwnPlantGrowth.msgFormat + a);
 					p.sendMessage(msg);
 					

@@ -157,6 +157,32 @@ BiomeGroup:
     NoGrowing:
     - VOID
     - SKY
+    -
+TORCHFLOWER_CROP:
+  Growth: 50
+  Death: 5
+  BiomeGroup:
+    - Jungle
+  Jungle:
+    Growth: 50
+    GrowthDark: 25
+    Death: 0
+    DeathDark: 5
+  Biome:
+    - NONE
+
+PITCHER_CROP:
+  Growth: 50
+  Death: 5
+  BiomeGroup:
+    - Jungle
+  Jungle:
+    Growth: 50
+    GrowthDark: 25
+    Death: 0
+    DeathDark: 5
+  Biome:
+    - NONE
 
 # Ageable / BlockGrowEvent or BlockSpreadEvent - Important note, as of PPG 1.6 the plant names are now all in UPPER CASE matching the actual Bukkit Material.TYPE 
 BAMBOO:
